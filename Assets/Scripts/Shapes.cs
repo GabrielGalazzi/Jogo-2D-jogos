@@ -7,6 +7,7 @@ namespace RicochetPoC
     {
         static Sprite s_Square;
         static Sprite s_Circle;
+        static Sprite s_Ring;
 
         /// <summary>1×1 unit white square, pivot in the centre.</summary>
         public static Sprite Square
@@ -47,6 +48,30 @@ namespace RicochetPoC
                     s_Circle = Sprite.Create(tex, new Rect(0, 0, size, size), new Vector2(0.5f, 0.5f), size);
                 }
                 return s_Circle;
+            }
+        }
+
+        /// <summary>1 unit diameter white circle outline, pivot in the centre.</summary>
+        public static Sprite Ring
+        {
+            get
+            {
+                if (s_Ring == null)
+                {
+                    const int size = 64;
+                    const float thickness = 7f;
+                    var tex = new Texture2D(size, size) { filterMode = FilterMode.Bilinear, name = "PoC Ring" };
+                    float r = size * 0.5f;
+                    for (int y = 0; y < size; y++)
+                    for (int x = 0; x < size; x++)
+                    {
+                        float d = Vector2.Distance(new Vector2(x + 0.5f, y + 0.5f), new Vector2(r, r));
+                        tex.SetPixel(x, y, new Color(1f, 1f, 1f, Mathf.Clamp01(r - d) * Mathf.Clamp01(d - (r - thickness))));
+                    }
+                    tex.Apply();
+                    s_Ring = Sprite.Create(tex, new Rect(0, 0, size, size), new Vector2(0.5f, 0.5f), size);
+                }
+                return s_Ring;
             }
         }
 

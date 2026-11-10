@@ -1,0 +1,93 @@
+{
+ "source": "C:/Users/gabri/AppData/Local/Temp/claude/416566160018e30f/dca5247f-d6e7-4169-8870-ba3fd9a7b723/scratchpad/dl/boss_zip/Idle/animations",
+ "out_dir": "C:/Users/gabri/Jogo 2D jogos/Assets/Art/Characters",
+ "slices": "C:/Users/gabri/Jogo 2D jogos/Assets/Art/art_slices.json",
+ "slices_prefix": "Characters/",
+ "name": "char_boss",
+ "canvas": [
+  96,
+  84
+ ],
+ "drop_heights": [
+  40,
+  46,
+  52,
+  58
+ ],
+ "idle_anim": "boss_hold_idle",
+ "anims": [
+  {
+   "name": "idle",
+   "source": "boss_hold_idle",
+   "fps": 5
+  },
+  {
+   "name": "walk",
+   "source": "boss_hold_walk",
+   "fps": 8,
+   "frames": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "name": "run",
+   "source": "boss_hold_run",
+   "fps": 13,
+   "frames": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "name": "rise",
+   "source": "boss_hold_jump",
+   "frames": [
+    3,
+    4
+   ],
+   "fps": 10
+  },
+  {
+   "name": "fall",
+   "source": "boss_hold_jump",
+   "frames": [
+    5
+   ],
+   "fps": 10
+  },
+  {
+   "name": "duck",
+   "source": "boss_hold_duck2",
+   "frames": [
+    4
+   ],
+   "fps": 16,
+   "max_h": 50
+  },
+  {
+   "name": "death",
+   "source": "boss_death",
+   "fps": 9,
+   "no_hands": true
+  }
+ ],
+ "hands": {
+  "head": 22,
+  "band": 16,
+  "grip_up": 3
+ },
+ "lighten": true
+}

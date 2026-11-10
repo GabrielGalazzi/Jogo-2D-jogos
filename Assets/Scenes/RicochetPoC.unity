@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000i
+  m_ApplyToSortingLayers: 7e1f9e1700000000475fe956b542627937165e39b57e9339i
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -389,8 +389,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b7e1d721c686c4f86d00e5c9e5f50a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RicochetPoC.GameBootstrap
-  playerSpawnFeet: {x: 2.5, y: 0}
+  startLevel: 1
+  skipMainMenu: 0
+  windowSize: {x: 1680, y: 840}
   showEnemyAimTraces: 1
+  magazineSize: 6
+  reloadTime: 2
+  sprintMultiplier: 1.5
+  twinGunFireInterval: 0.4
+  gunSwitchTime: 0.5
+  gunSwitchCooldown: 1
+  randomizeEnemySpawns: 1
+  spawnSpotsPerEnemy: 1.7
+  spawnRange: 3
+  enemyDuckChance: 0.1
+  bossInvulnerableTime: 4
+  bossRageShotsPerSecond: 2
+  bossDodgeChance: 0.33
+  bossReactionTime: 0.12
+  tutorialArt:
+    walk: {fileID: 0}
+    sprint: {fileID: 0}
+    jump: {fileID: 0}
+    duck: {fileID: 0}
+    aim: {fileID: 0}
+    shoot: {fileID: 0}
+    pistol: {fileID: 0}
+    magazine: {fileID: 0}
+    ricochet: {fileID: 0}
+    twinGun: {fileID: 0}
+    switchGuns: {fileID: 0}
+    twinShot: {fileID: 0}
+    topBarrel: {fileID: 0}
 --- !u!4 &2002970623
 Transform:
   m_ObjectHideFlags: 0

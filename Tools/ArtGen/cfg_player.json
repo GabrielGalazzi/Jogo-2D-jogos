@@ -1,0 +1,96 @@
+{
+  "source": "C:/Users/gabri/AppData/Local/Temp/claude/416566160018e30f/dca5247f-d6e7-4169-8870-ba3fd9a7b723/scratchpad/dl/player_zip/Idle/animations",
+  "out_dir": "C:/Users/gabri/Jogo 2D jogos/Assets/Art/Characters",
+  "slices": "C:/Users/gabri/Jogo 2D jogos/Assets/Art/art_slices.json",
+  "slices_prefix": "Characters/",
+  "name": "char_player",
+  "canvas": [
+    56,
+    48
+  ],
+  "drop_heights": [
+    18,
+    23
+  ],
+  "idle_anim": "player_hold_idle",
+  "hands": {
+    "head": 13,
+    "band": 10,
+    "grip_up": 2
+  },
+  "anims": [
+    {
+      "name": "idle",
+      "source": "player_hold_idle",
+      "fps": 6
+    },
+    {
+      "name": "walk",
+      "source": "player_hold_walk",
+      "fps": 11
+    },
+    {
+      "name": "run",
+      "source": "player_hold_run",
+      "fps": 14
+    },
+    {
+      "name": "rise",
+      "source": "player_hold_jump",
+      "frames": [
+        2,
+        3
+      ],
+      "fps": 10
+    },
+    {
+      "name": "fall",
+      "source": "player_hold_jump",
+      "frames": [
+        5
+      ],
+      "fps": 10
+    },
+    {
+      "name": "land",
+      "source": "player_hold_jump",
+      "frames": [
+        6,
+        7
+      ],
+      "fps": 14
+    },
+    {
+      "name": "duck",
+      "source": "player_hold_duck",
+      "frames": [
+        3,
+        4
+      ],
+      "fps": 16,
+      "max_h": 29
+    },
+    {
+      "name": "duckwalk",
+      "source": "player_hold_duckwalk",
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "fps": 9,
+      "max_h": 29
+    },
+    {
+      "name": "death",
+      "source": "player_death",
+      "fps": 10,
+      "no_hands": true
+    }
+  ]
+}

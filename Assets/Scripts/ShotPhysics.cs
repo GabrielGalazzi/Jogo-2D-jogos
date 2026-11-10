@@ -36,7 +36,7 @@ namespace RicochetPoC
 
         /// <summary>
         /// Sweeps a circle and returns the closest relevant hit. Characters on <paramref name="ownTeam"/> are passed through;
-        /// with <paramref name="wallsOnly"/> every character is passed through.
+        /// with <paramref name="wallsOnly"/> every character is passed through. The safe zone door is passed through heading into the safe zone (see <see cref="OneWayDoor"/>).
         /// </summary>
         public static bool Cast(Vector2 origin, Vector2 dir, float distance, float radius, Team ownTeam, bool wallsOnly, out ShotHit hit)
         {
@@ -52,6 +52,9 @@ namespace RicochetPoC
             {
                 // Surfaces we're moving away from (e.g. the one we just bounced off) can't be impacts.
                 if (Vector2.Dot(dir, h.normal) >= 0f)
+                    continue;
+                // The safe zone door lets shots in, never out.
+                if (OneWayDoor.LetsShotThrough(h.collider, dir))
                     continue;
                 var target = h.collider.GetComponentInParent<IShootable>();
                 if (target != null && (wallsOnly || target.Team == ownTeam))

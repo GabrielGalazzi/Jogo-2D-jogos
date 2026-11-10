@@ -1,0 +1,74 @@
+{
+ "source": "C:/Users/gabri/AppData/Local/Temp/claude/416566160018e30f/dca5247f-d6e7-4169-8870-ba3fd9a7b723/scratchpad/dl/enemy_zip/Idle/animations",
+ "out_dir": "C:/Users/gabri/Jogo 2D jogos/Assets/Art/Characters",
+ "slices": "C:/Users/gabri/Jogo 2D jogos/Assets/Art/art_slices.json",
+ "slices_prefix": "Characters/",
+ "name": "char_enemy_{v}",
+ "canvas": [
+  56,
+  48
+ ],
+ "drop_heights": [
+  22,
+  29,
+  33
+ ],
+ "idle_anim": "enemy_hold_idle",
+ "variants": {
+  "red": null,
+  "orange": [
+   355,
+   28,
+   1.3
+  ],
+  "purple": [
+   355,
+   275
+  ]
+ },
+ "anims": [
+  {
+   "name": "idle",
+   "source": "enemy_hold_idle",
+   "fps": 6
+  },
+  {
+   "name": "rise",
+   "source": "enemy_hold_hop",
+   "frames": [
+    3,
+    4
+   ],
+   "fps": 10
+  },
+  {
+   "name": "fall",
+   "source": "enemy_hold_hop",
+   "frames": [
+    6
+   ],
+   "fps": 10
+  },
+  {
+   "name": "duck",
+   "source": "enemy_hold_duck",
+   "frames": [
+    3,
+    4
+   ],
+   "fps": 16,
+   "max_h": 29
+  },
+  {
+   "name": "death",
+   "source": "enemy_death",
+   "fps": 10,
+   "no_hands": true
+  }
+ ],
+ "hands": {
+  "head": 13,
+  "band": 10,
+  "grip_up": 2
+ }
+}
